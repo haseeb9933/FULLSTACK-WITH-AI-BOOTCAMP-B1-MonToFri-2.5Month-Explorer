@@ -1,12 +1,12 @@
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.common.by import By
 import pandas as pd
 
 df = pd.DataFrame(columns=['Player','Salary','Year']) # creates master dataframe
 
-cService = webdriver.ChromeService(executable_path='C:\\Users\\HP\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe') # '/Users/bpfalz/Downloads/chromedriver' for my macbook
-driver = webdriver.Chrome(service=cService)
+service = ChromeService(executable_path="/Users/haseebtariq/Downloads/chromedriver-mac-x64/chromedriver")
+driver = webdriver.Chrome(service=service)
 
 for yr in range(1990,2023):
     page_num = str(yr) + '-' + str(yr+1) +'/'
