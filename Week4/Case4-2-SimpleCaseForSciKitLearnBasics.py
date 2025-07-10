@@ -31,7 +31,8 @@ print("wine_data_as_frame", wine_data_as_frame )
 
 wine_df = pd.DataFrame(wine_data.data, columns=wine_data.feature_names)
 
-print("wine_df - dataFrame: ", wine_df)
+print("wine_df - dataFrame: ", wine_df)\
+
 
 # Add the target label
 wine_df["target"] = wine_data.target
