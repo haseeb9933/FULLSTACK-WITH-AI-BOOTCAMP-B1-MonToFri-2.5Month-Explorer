@@ -168,3 +168,4 @@ print(f'Mean absolute error: {mae:.2f}')
 print(f'Mean squared error: {mse:.2f}')
 print(f'Root mean squared error: {rmse:.2f}')
 print(f'R2 Score: {r2:.2f}')
+
