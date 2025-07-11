@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 #Let's read the CSV file and package it into a DataFrame:
-df = pd.read_csv('week5/student_scores.csv')
+df = pd.read_csv('/Users/haseebtariq/Documents/GitHub/FULLSTACK-WITH-AI-BOOTCAMP-B1-MonToFri-2.5Month-Explorer/Week4/student_scores.csv')
 
 #Once the data is loaded in, let's take a quick peek at the first 5 values using the head() method:
 print(df.head())
