@@ -19,7 +19,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
+<<<<<<< HEAD
 path_to_file = '/Users/haseebtariq/Documents/GitHub/FULLSTACK-WITH-AI-BOOTCAMP-B1-MonToFri-2.5Month-Explorer/Week4/petrol_consumption.csv'
+=======
+path_to_file = 'week4/petrol_consumption.csv'
+>>>>>>> upstream/main
 df = pd.read_csv(path_to_file)
 
 print("df.head():  \n",df.head())

@@ -19,7 +19,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 #Let's read the CSV file and package it into a DataFrame:
+<<<<<<< HEAD
 df = pd.read_csv('/Users/haseebtariq/Documents/GitHub/FULLSTACK-WITH-AI-BOOTCAMP-B1-MonToFri-2.5Month-Explorer/Week4/student_scores.csv')
+=======
+df = pd.read_csv('week4/student_scores.csv')
+>>>>>>> upstream/main
 
 #Once the data is loaded in, let's take a quick peek at the first 5 values using the head() method:
 print(df.head())
@@ -167,5 +171,9 @@ r2 = r2_score(y_test, y_pred)
 print(f'Mean absolute error: {mae:.2f}')
 print(f'Mean squared error: {mse:.2f}')
 print(f'Root mean squared error: {rmse:.2f}')
+<<<<<<< HEAD
 print(f'R2 Score: {r2:.2f}')
 
+=======
+print(f'R2 Score: {r2:.2f}')
+>>>>>>> upstream/main

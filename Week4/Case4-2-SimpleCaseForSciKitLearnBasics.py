@@ -29,10 +29,17 @@ wine_data_as_frame = load_wine(as_frame=True)
 print("wine_data_as_frame", wine_data_as_frame )
 
 
+<<<<<<< HEAD
 wine_df = pd.DataFrame(wine_data.data, columns=wine_data.feature_names)
 
 print("wine_df - dataFrame: ", wine_df)\
 
+=======
+# Convert data to pandas dataframe
+wine_df = pd.DataFrame(wine_data.data, columns=wine_data.feature_names)
+
+print("wine_df - dataFrame: ", wine_df)
+>>>>>>> upstream/main
 
 # Add the target label
 wine_df["target"] = wine_data.target
@@ -202,4 +209,8 @@ where
  and 
  are the precision and recall at the nth threshold. With random predictions, the AP is the fraction of positive samples.
 
+<<<<<<< HEAD
 """
+=======
+"""
+>>>>>>> upstream/main
