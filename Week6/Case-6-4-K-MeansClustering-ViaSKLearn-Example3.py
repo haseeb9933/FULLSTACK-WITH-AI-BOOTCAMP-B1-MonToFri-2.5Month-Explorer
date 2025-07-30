@@ -16,7 +16,7 @@ from sklearn.cluster import KMeans
 
 from sklearn.datasets import load_digits
 digits = load_digits()
-digits.data.shape
+print("digits.data.shape: ", digits.data.shape)
 """
 Output
 (1797, 64)
@@ -28,6 +28,7 @@ We can perform the clustering as we did in Example 1 above −
 kmeans = KMeans(n_clusters=10, random_state=0)
 clusters = kmeans.fit_predict(digits.data)
 kmeans.cluster_centers_.shape
+print("kmeans.cluster_centers_.shape: " , kmeans.cluster_centers_.shape)
 """
 Output
 (10, 64)
@@ -38,6 +39,8 @@ centers = kmeans.cluster_centers_.reshape(10, 8, 8)
 for axi, center in zip(ax.flat, centers):
    axi.set(xticks=[], yticks=[])
    axi.imshow(center, interpolation='nearest', cmap=plt.cm.binary)
+fig.show()
+wait =  input("Wait here: ")
 """
 Output
 As output, we will get following image showing clusters centers learned by k-means.
@@ -50,11 +53,15 @@ labels = np.zeros_like(clusters)
 for i in range(10):
    mask = (clusters == i)
    labels[mask] = mode(digits.target[mask])[0]
+
 """
 Next, we can check the accuracy as follows −
 """
 from sklearn.metrics import accuracy_score
-accuracy_score(digits.target, labels)
 
+print("accuracy_score:" , accuracy_score(digits.target, labels))
+
+"""
 Output
 0.7935447968836951
+"""
